@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "source sans pro";
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  padding: 20px 20px;
+}
+
+.nav__logo i {
+  margin-right: 10px;
+  color: green;
+}
+
+.nav__logo {
+  display: flex;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__menu li {
+  font-size: 18px;
+  padding: 0px 20px;
+}
+
+.nav__menu li a {
+  color: beige;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav__menu li a:hover {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.nav__icons {
+  display: flex;
+}
+
+.nav__icons li {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+  color: purple;
+}
+
+@media all and (max-width: 920px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .nav__menu li {
+    padding: 14px 5px;
+  }
+
+  .nav__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .nav__toggleBtn {
+    display: block;
+  }
+
+  .nav__menu.active,
+  .nav__icons.active {
+    display: flex;
+  }
+} ;
