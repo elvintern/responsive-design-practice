@@ -1,0 +1,156 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --side-padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 17px var(--side-padding);
+}
+
+.logo {
+  display: flex;
+  font-size: var(--font-large);
+}
+
+.logo h2 {
+  font-weight: 600;
+}
+
+.logo i {
+  color: var(--red-color);
+  margin-right: 5px;
+}
+
+.nav i {
+  color: var(--white-color);
+}
+
+.player video {
+  width: 100%;
+}
+
+.info {
+  padding: 5px var(--side-padding);
+}
+
+.hastag {
+  display: flex;
+  color: var(--blue-color);
+  font-weight: 550;
+  font-size: var(--font-small);
+  margin-bottom: 5px;
+}
+
+.hastag li {
+  margin-right: 5px;
+}
+
+.video-title {
+  display: flex;
+}
+
+.video-title h2 {
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.btn--more {
+  height: 100%;
+}
+
+.record {
+  margin-top: 3px;
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.functions {
+  padding: 0 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.function .main-btn {
+  color: var(--grey-dark-color);
+  padding: 7px;
+}
+
+.main-btn i {
+  font-size: var(--font-large);
+}
+
+.function p {
+  font-size: var(--font-micro);
+  font-weight: 600;
+}
+
+.youtuber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  padding: 10px 0;
+}
+
+.youtuber__info {
+  width: 100%;
+  margin-left: 7px;
+}
+
+.youtuber__info h3 {
+  font-size: var(--font-large);
+}
+
+.youtuber__info p {
+  margin-top: 3px;
+  font-size: var(--font-small);
+}
+
+.youtube__img img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.youtuber__sub p {
+  font-size: var(--font-small);
+  font-weight: 600;
+  color: var(--grey-dark-color);
+}
