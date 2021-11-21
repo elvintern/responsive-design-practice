@@ -24,6 +24,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -50,8 +54,17 @@ header {
   color: var(--white-color);
 }
 
+.player {
+  background-color: black;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
 .player video {
   width: 100%;
+  height: 100%;
+  max-width: 1000px;
 }
 
 .info {
@@ -74,8 +87,11 @@ header {
   display: flex;
 }
 
-.video-title h2 {
+.video-title .title {
   font-weight: 500;
+}
+
+.video-title .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -84,6 +100,15 @@ header {
 
 .btn--more {
   height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.btn--more.clicked {
+  transform: rotate(180deg);
+}
+
+.btn--more .main-btn i.active {
+  color: var(--blue-color);
 }
 
 .record {
@@ -152,5 +177,49 @@ header {
 .youtuber__sub p {
   font-size: var(--font-small);
   font-weight: 600;
+  color: var(--red-color);
+}
+
+section {
+  padding: 0px var(--side-padding);
+}
+
+.next-video {
+  display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.next-video__thumbnail img {
+  width: 150px;
+}
+
+.next-video__description {
+  width: 100%;
+  padding: 0 var(--side-padding);
+}
+
+.next-video__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.next-video__youtuber {
+  font-size: var(--font-medium);
   color: var(--grey-dark-color);
+}
+
+.next-video__views {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+
+@media screen and (min-width: 900px) {
+  .below-video {
+    display: flex;
+    margin-top: 20px;
+  }
 }
