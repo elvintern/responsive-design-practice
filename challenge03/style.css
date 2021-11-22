@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #23424a;
+}
+
+.content {
+  min-width: 500px;
+  width: 50%;
+  padding: 100px;
+}
+
+.content h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.content span {
+  display: block;
+  text-align: center;
+  width: 180px;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #38cfd9;
+}
