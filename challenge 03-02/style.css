@@ -100,10 +100,6 @@ h1 {
   opacity: 0.75;
 }
 
-.second-row {
-  padding: 100px;
-}
-
 .container--bottom {
   background-color: #136c72;
   color: white;
@@ -111,4 +107,5 @@ h1 {
 
 .second-row .col {
   text-align: center;
+  padding: 100px 0px;
 }
