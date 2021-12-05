@@ -92,6 +92,14 @@ font-family: 'Roboto', sans-serif; */
 }
 
 @media (min-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .intro__title {
+    font-size: 6rem;
+  }
+
   .container {
     text-align: start;
   }
