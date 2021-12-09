@@ -29,6 +29,17 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgb(110, 110, 110);
+}
+
 nav {
   background-color: var(--nav-color);
 }
@@ -64,7 +75,7 @@ nav {
   text-decoration: none;
   color: var(--white-color);
   display: block;
-  padding: 1.25rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .nav__links li:hover {
@@ -87,6 +98,36 @@ nav {
   width: 100%;
   background-color: var(--white-color);
   border-radius: 10px;
+}
+
+main {
+  background-color: var(--box-color);
+}
+
+.main-container {
+  padding: 3rem 0;
+}
+
+.main__title {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 5rem;
+}
+
+.main__title--brown {
+  color: var(--brown-color);
+}
+
+.main__article p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  opacity: 0.7;
+  margin-bottom: 3rem;
+}
+
+.btn-main {
+  padding: 1rem 1.7rem;
 }
 
 @media (max-width: 700px) {
