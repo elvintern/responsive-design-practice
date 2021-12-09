@@ -175,6 +175,38 @@ main {
   color: var(--white-color);
 }
 
+footer {
+  background-color: var(--nav-color);
+  padding-bottom: 2rem;
+}
+
+.footer-title {
+  padding: 2rem 0;
+  font-size: 4rem;
+  color: var(--white-color);
+}
+
+.footer-col__title {
+  font-size: 2rem;
+  color: var(--brown-color);
+}
+
+.footer-col p,
+.footer-col__links {
+  font-weight: 400;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.footer-col__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col__links li {
+  padding: 0.5rem 0;
+}
+
 @media (max-width: 700px) {
   .nav__links {
     display: none;
